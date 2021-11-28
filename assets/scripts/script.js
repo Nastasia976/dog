@@ -89,4 +89,8 @@ $(document).ready(function () {
     $('.back').click(function (event) {
         $('.catalogs-menu').removeClass('active');
     });
+
+    $('.heart').click(function (event) {
+        $(this).toggleClass('active');
+    });
 });
