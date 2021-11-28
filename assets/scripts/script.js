@@ -73,4 +73,20 @@ $(document).ready(function () {
             }
         ]
     });
+
+    $('.header__burger').click(function (event) {
+        $('.burger-menu').addClass('active');
+        $('body').addClass('lock');
+    });
+    $('.burger-menu__close').click(function (event) {
+        $('.burger-menu').removeClass('active');
+        $('body').removeClass('lock');
+    });
+
+    $('.el-for-menu-catalog').click(function (event) {
+        $('.catalogs-menu').toggleClass('active');
+    });
+    $('.back').click(function (event) {
+        $('.catalogs-menu').removeClass('active');
+    });
 });
